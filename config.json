@@ -1,0 +1,46 @@
+{
+    "url": " http://localhost:8705/tmf-api/testEnvironment/v4/",
+    "headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+    },
+    "resourcesToTest": "AbstractEnvironment",
+    "payloads": {
+        "ProvisioningArtifact": {
+            "POST": {
+                "payload": {
+                    "description": "Sample Sample provisioning artifact",
+                    "provisioningArtifactDefinition": {},
+                    "version": "1.2.3"
+                }
+            }
+        },
+        "TestResourceAPI": {
+            "POST": {
+                "payload": {
+                    "description": "Sample abstract test resource API",
+                    "testResourceAPIDefinition": {},
+                    "version": "1.2.3"
+                }
+            }
+        },
+        "ConcreteEnvironmentMetaModel": {
+            "POST": {
+                "payload": {
+                    "concreteEnvironmentMetaModelDefinition": {},
+                    "description": "Sample concrete environment metamodel",
+                    "version": "1.2.3"
+                }
+            }
+        },
+        "AbstractEnvironment": {
+            "POST": {
+                "payload": {
+                    "abstractEnvironmentDefinition": {},
+                    "description": "Sample abstract test environment",
+                    "version": "1.2.3"
+                }
+            }
+        }
+    }
+}
